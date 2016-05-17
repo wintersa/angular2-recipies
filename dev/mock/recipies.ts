@@ -27,7 +27,7 @@ export let RECIPES:Recipe[] = [
                     new Ingredient('Monkey Meat', 1),
                     new Ingredient('Big Fries', 2),
                     new Ingredient('Wet Salad', 11),
-                    new Ingredient('Cookie Dough', 2),
+                    new Ingredient('Cookie Dough', 2)
                   ]
               )
 ];

@@ -4,16 +4,15 @@ import {SHOPPING_LIST} from "../mock/shopping-list";
 
 @Injectable()
 export class ShoppingListService {
-
-    getAllItems(index: number){
+    getAllItems() {
         return SHOPPING_LIST;
     }
 
-    getItem(item: number){
-        return SHOPPING_LIST[item];
+    getItem(index: number) {
+        return SHOPPING_LIST[index];
     }
 
-    getIndexOfItem(item: Ingredient){
+    getIndexOfItem(item: Ingredient) {
         return SHOPPING_LIST.indexOf(item);
     }
 
