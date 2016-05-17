@@ -24,9 +24,8 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 })
 
 @RouteConfig([
-  {path: '/recipes', name: 'Recipes', component: RecipesComponent, useAsDefault: true},
+  {path: '/recipes/...', name: 'Recipes', component: RecipesComponent, useAsDefault: true},
   {path: '/shopping-list', name: 'ShoppingList', component: ShoppingListComponent}
-
 ])
 export class AppComponent {
 

@@ -27,6 +27,8 @@
     "./dev/boot.ts",
     "./dev/mock/recipies.ts",
     "./dev/mock/shopping-list.ts",
+    "./dev/recipe-book/recipe-detail.component.ts",
+    "./dev/recipe-book/recipe-list.component.ts",
     "./dev/recipe-book/recipe.service.ts",
     "./dev/recipe-book/recipes.component.ts",
     "./dev/shared/ingredient.ts",
