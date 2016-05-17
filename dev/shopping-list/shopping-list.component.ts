@@ -10,7 +10,7 @@ import {OnInit} from 'angular2/core';
         <my-shopping-list-edit [ingredient]="selectedItem"></my-shopping-list-edit>
         <div class="list">
               <h3>shopping-list.component.ts</h3>
-              <button class="btn">Add new Item</button>
+              <button class="btn" (click)="onAddItem()">Add new Item</button>
               <ul>
                   <li *ngFor="#item of shoppingList" (click)="onSelectItem(item)">{{item.name}} ({{item.amount}})</li>
               </ul>
