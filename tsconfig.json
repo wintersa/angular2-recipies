@@ -28,6 +28,7 @@
     "./dev/mock/recipies.ts",
     "./dev/mock/shopping-list.ts",
     "./dev/recipe-book/recipe-detail.component.ts",
+    "./dev/recipe-book/recipe-edit.component.ts",
     "./dev/recipe-book/recipe-list.component.ts",
     "./dev/recipe-book/recipe.service.ts",
     "./dev/recipe-book/recipes.component.ts",
