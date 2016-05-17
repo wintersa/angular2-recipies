@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {ShoppingListEditComponent} from "./shopping-list-edit.component";
+import {Ingredient} from "../shared/ingredient";
 
 @Component({
     template: `
@@ -16,5 +17,5 @@ import {ShoppingListEditComponent} from "./shopping-list-edit.component";
 })
 
 export class ShoppingListComponent {
-
+    shoppingList:  Ingredient[];
 }
