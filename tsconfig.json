@@ -32,6 +32,7 @@
     "./dev/shared/ingredient.ts",
     "./dev/shared/recipe.ts",
     "./dev/shared/shopping-list.service.ts",
+    "./dev/shopping-list/shopping-list-edit.component.ts",
     "./dev/shopping-list/shopping-list.component.ts"
   ]
 }

@@ -1,16 +1,18 @@
 import {Component} from 'angular2/core';
+import {ShoppingListEditComponent} from "./shopping-list-edit.component";
 
 @Component({
     template: `
         <h1>Shopping List</h1>
-        <div>Edit Section</div>
+        <my-shopping-list-edit></my-shopping-list-edit>
         <div class="list">
               <button class="btn">Add new Item</button>
               <ul>
-                  <li>List Items...</li>
+                  <li *ngFor="#item of shoppingList">{{item.name}} ({{item.amount}})</li>
               </ul>
         </div>
-    `
+    `,
+    directives: [ShoppingListEditComponent]
 })
 
 export class ShoppingListComponent {
