@@ -7,7 +7,7 @@ import {Router} from 'angular2/router';
 @Component({
     selector: 'my-recipe-list',
     template: `
-        <button class="btn">Add Recipe</button>
+        <button class="btn" (click)="onAddRecipe()">Add Recipe</button>
         <ul>
             <li *ngFor="#item of recipes" (click)="onSelect(item)">
                 <div class="img">
@@ -26,6 +26,10 @@ export class RecipeListComponent implements OnInit {
 
     onSelect(item: Recipe) {
        this._router.navigate(['RecipeDetail', {recipeIndex: Number(this._recipeService.getRecipeIndex(item))}]);
+    }
+
+    onAddRecipe() {
+        this._router.navigate(['RecipeEdit', {editMode: 'create'}]);
     }
 
     ngOnInit():any {

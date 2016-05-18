@@ -20,7 +20,7 @@ export class RecipeService {
           RECIPES.push(item);
     }
 
-    DeleteRecipe(index: number) {
+    deleteRecipe(index: number) {
           RECIPES.splice(index, 1);
     }
 

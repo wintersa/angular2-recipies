@@ -13,7 +13,7 @@
     <div class="list">
       <a (click)="onAddToShoppingList()" class="btn">Add all to shopping list</a>
       <ul>
-        <li *ngFor="#item of recipe.ingredient">{{item.name}} ({{item.amount}})</li>
+        <li *ngFor="#item of recipe.ingredients">{{item.name}} ({{item.amount}})</li>
       </ul>
     </div>
 </div>
